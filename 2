@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>13-2.html</title>
+    <title>12-4-7.html</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,11 +12,18 @@
 </head>
 <body>
     <script> 
-        const mangSo = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
+        let mangSo = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
 
-        const soNhap = parseInt(prompt("Nhập vào một số bất kỳ:"));
+        let soNhap = parseInt(prompt("Nhập vào một số bất kỳ:"));
 
-        if (mangSo.includes(soNhap)) {
+        let flag = true;
+        for (let i = 0; i < mangSo.length; i++) {
+            if (mangSo[i] === soNhap) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag === false) {
             alert("Bingo");
         } else {
             alert("Chúc bạn may mắn lần sau");
