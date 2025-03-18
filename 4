@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13-4.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        let input = prompt("Nhập vào dãy số bất kỳ (các số cách nhau bằng dấu cách):");
+
+        let arr = input.split(" ").map(Number);
+
+        let maxNumber = Math.max(...arr);
+
+        alert("Phần tử lớn nhất trong mảng là: " + maxNumber);
+
+    </script>
+</body>
+</html>
